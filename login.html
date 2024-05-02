@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="noindex, nofollow">
+
+
+  <link rel="stylesheet" href="public/main.cdn.min.css">
+  <style id="custom-styles-container">
+    :root {
+      --primary-color: #4F00DE;
+    }
+
+    :root {
+      --button-font-color: #ffffff;
+    }
+
+    :root {
+      --secondary-button-border-color: #839097;
+      --social-button-border-color: #839097;
+      --radio-button-border-color: #839097;
+    }
+
+
+
+
+    :root {
+      --secondary-button-text-color: #323F4B;
+    }
+
+
+
+
+    :root {
+      --link-color: #4F00DE;
+    }
+
+
+
+
+    :root {
+      --title-font-color: #323F4B;
+    }
+
+
+
+
+    :root {
+      --font-default-color: #323F4B;
+    }
+
+
+
+
+    :root {
+      --widget-background-color: #ffffff;
+    }
+
+
+
+
+    :root {
+      --box-border-color: #c9cace;
+    }
+
+
+
+
+    :root {
+      --font-light-color: #65676e;
+    }
+
+
+
+
+    :root {
+      --input-text-color: #323F4B;
+    }
+
+
+
+
+    :root {
+      --input-border-color: #c9cace;
+      --border-default-color: #c9cace;
+    }
+
+
+
+
+    :root {
+      --input-background-color: #ffffff;
+    }
+
+
+
+
+    :root {
+      --icon-default-color: #839097;
+    }
+
+
+
+
+    :root {
+      --error-color: #D94747;
+      --error-text-color: #ffffff;
+    }
+
+
+
+
+    :root {
+      --success-color: #82CC23;
+    }
+
+
+
+
+    :root {
+      --base-focus-color: #635dff;
+      --transparency-focus-color: rgba(99, 93, 255, 0.15);
+    }
+
+
+
+
+    :root {
+      --base-hover-color: #000000;
+      --transparency-hover-color: rgba(0, 0, 0, var(--hover-transparency-value));
+    }
+
+    html,
+    :root {
+      font-size: 16px;
+      --default-font-size: 16px;
+    }
+
+    body {
+      --title-font-size: 1.5rem;
+      --title-font-weight: var(--font-default-weight);
+    }
+
+    .c06a6a2d9 {
+      font-size: 0.875rem;
+      font-weight: var(--font-default-weight);
+    }
+
+
+
+
+    .c31ae75c6 {
+      font-size: 0.875rem;
+      font-weight: var(--font-default-weight);
+    }
+
+    .ulp-passkey-benefit-heading {
+      font-size: 1.025rem;
+    }
+
+
+
+
+    .c095fb6d5,
+    .c594580b4 {
+      font-size: 1rem;
+      font-weight: var(--font-default-weight);
+    }
+
+
+
+
+    body {
+      --ulp-label-font-size: 1rem;
+      --ulp-label-font-weight: var(--font-default-weight);
+    }
+
+
+
+
+    .cc370e791,
+    .cc3100fd0,
+    [id^='ulp-container-'] a {
+      font-size: 0.875rem;
+      font-weight: var(--font-bold-weight) !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    :root {
+      --button-border-width: 1px;
+      --social-button-border-width: 1px;
+      --radio-border-width: 1px;
+    }
+
+
+
+
+    body {
+      --button-border-radius: 9999px;
+      --radio-border-radius: 9999px;
+    }
+
+
+
+
+    :root {
+      --input-border-width: 1px;
+    }
+
+
+
+
+    body {
+      --input-border-radius: 9999px;
+    }
+
+
+
+
+    :root {
+      --border-radius-outer: 8px;
+    }
+
+
+
+
+    :root {
+      --box-border-width: 1px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body {
+      --logo-alignment: 0 auto;
+    }
+
+
+
+
+
+
+    .c38272261 {
+      content: url('public/logo.svg');
+    }
+
+
+
+
+
+    body {
+      --logo-height: 52px;
+    }
+
+    .c38272261 {
+      height: var(--logo-height);
+    }
+
+
+
+
+
+
+    body {
+      --header-alignment: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .c9b1384ee {
+      --page-background-alignment: center;
+    }
+
+
+
+
+    body {
+      --page-background-color: #E3DBF1;
+    }
+  </style>
+  <style>
+    /* By default, hide features for javascript-disabled browsing */
+    /* We use !important to override any css with higher specificity */
+    /* It is also overriden by the styles in <noscript> in the header file */
+    .no-js {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+  </style>
+  <noscript>
+    <style>
+      /* We use !important to override the default for js enabled */
+      /* If the display should be other than block, it should be defined specifically here */
+      .js-required {
+        display: none !important;
+      }
+
+      .no-js {
+        clip: auto;
+        clip-path: none;
+        height: auto;
+        overflow: auto;
+        position: static;
+        white-space: normal;
+        width: var(--prompt-width);
+      }
+    </style>
+  </noscript>
+
+  <title>Iniciar sesión | Planck SPA</title>
+</head>
+
+<body>
+  <div class="cfd649805 c9b1384ee">
+
+    <main class="c5a580ca2 login">
+      <section class="c5ceffaa1 _prompt-box-outer">
+        <div class="c5b61a33c c3bed33f0">
+
+
+          <div class="c4cc59c42">
+            <header class="c38afc2d4 cd37ab43a">
+              <div title="lenard-prod" id="custom-prompt-logo"
+                style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important">
+              </div>
+
+              <img class="c38272261 c2b09ae3f" id="prompt-logo-center" src="public/logo.svg" alt="lenard-prod">
+
+
+              <h1 class="c3cef09c2 cbae2c229">Bienvenido</h1>
+
+
+              <div class="c06a6a2d9 c05953094">
+
+                <p class="cb1fa4186 c52248d64">Iniciar sesión para comenzar a operar</p>
+
+              </div>
+            </header>
+
+            <div class="c31ae75c6 cd9eef905">
+
+
+
+              <form method="POST" class="c301b0bf4 c8bd50aba" data-form-primary="true" action="login/">
+                <input type="hidden" name="state"
+                  value="hKFo2SBlTEZJb0I5U2pBYVZXRUZCSGpWaUZ1UVJSeEhBdmlRcqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGU3RW4xeklIWmpIbWVmMHgxbWcxREpHYmh1MmdzUm9Oo2NpZNkgaVd4UFVnQVJQVGFqczl5bFZOMXB3TUpoRHVVWThYNm4">
+
+
+
+                <div class="c6bfe892f c7102684a">
+                  <div class="c7822f0d2">
+
+
+
+                    <div class="input-wrapper _input-wrapper">
+                      <div class="c05687a7c c95ec6d49 text c452cd9e4 c68e0666a" data-action-text=""
+                        data-alternate-action-text="">
+                        <label class="c2809db4e no-js c6bbe06f6 c86f6a653" for="username">
+                          Correo electrónico
+                        </label>
+
+                        <input class="input c2a857a25 cd51434c7" inputmode="email" name="username" id="username"
+                          type="email" value="" required="" autocapitalize="none" spellcheck="false" autofocus="">
+
+                        <div class="c2809db4e js-required c6bbe06f6 c86f6a653" data-dynamic-label-for="username"
+                          aria-hidden="true">
+                          Correo electrónico
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                    <div class="input-wrapper _input-wrapper">
+                      <div class="c05687a7c c95ec6d49 password c3289d1d4 c68e0666a" data-action-text=""
+                        data-alternate-action-text="">
+                        <label class="c2809db4e no-js c6bbe06f6 c005e1e8d" for="password">
+                          Contraseña
+                        </label>
+
+                        <input class="input c2a857a25 c70ffb6a4" name="password" id="password" type="password"
+                          required="" autocomplete="current-password" autocapitalize="none" spellcheck="false">
+
+                        <div class="c2809db4e js-required c6bbe06f6 c005e1e8d" data-dynamic-label-for="password"
+                          aria-hidden="true">
+                          Contraseña
+                        </div>
+
+                        <button type="button" class="c095fb6d5 ulp-button-icon c3452352a _button-icon"
+                          data-action="toggle">
+                          <span aria-hidden="true" class="password-icon-tooltip show-password-tooltip">Mostrar
+                            contraseña</span>
+
+                          <span aria-hidden="true" class="password-icon-tooltip hide-password-tooltip hide">Ocultar
+                            contraseña</span>
+
+                          <span class="screen-reader-only password-toggle-label" data-label="show-password">Mostrar
+                            contraseña</span>
+
+                          <span class="screen-reader-only password-toggle-label hide" data-label="hide-password">Ocultar
+                            contraseña</span>
+
+                          <span class="ce8e04462 password js-required" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="c3e0957d1 cb240c982">
+
+                  <a class="cc3100fd0 cbd40558e c316efbcd"
+                    href="https://lenard-prod.us.auth0.com/u/login/password-reset-start/Username-Password-Authentication?state=hKFo2SBlTEZJb0I5U2pBYVZXRUZCSGpWaUZ1UVJSeEhBdmlRcqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGU3RW4xeklIWmpIbWVmMHgxbWcxREpHYmh1MmdzUm9Oo2NpZNkgaVd4UFVnQVJQVGFqczl5bFZOMXB3TUpoRHVVWThYNm4"
+                    aria-label="">¿Olvidó su contraseña?</a>
+
+                </p>
+
+                <div class="c60ff0df8">
+
+                  <button type="submit" name="action" value="default"
+                    class="c095fb6d5 c59916eaf c3452352a c381629b1 c4e39ce3d" data-action-button-primary="true">Iniciar
+                    sesión</button>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function (e) {
+      let inputs = document.querySelectorAll("input:not([hidden])")
+      inputs.forEach(inp => {
+        inp.addEventListener("focusout", (e) => {
+          if (e.target.value != "" && e.target.value != null) {
+            inp.nextElementSibling.style.top = "-2px";
+          } else {
+            inp.nextElementSibling.style.top = "";
+          }
+        })
+      })
+    }, true)
+  </script>
+
+</body>
+
+</html>
